@@ -248,7 +248,10 @@ class AsyncMoviesDB:
             {"$sort": {"total": -1}},
             {"$limit": limite},
         ]
-        return await coll.aggregate(pipeline).to_list(length=limite)
+        # aggregate() SÍ es corutina (a diferencia de find()): hay que
+        # esperarla para obtener el cursor y luego pedir la lista.
+        cursor = await coll.aggregate(pipeline)
+        return await cursor.to_list(length=limite)
 
     async def consulta_promedio_por_anio(self, anio_ini=2000, anio_fin=2024):
         coll, _ = await self.coleccion_lectura()
@@ -259,7 +262,8 @@ class AsyncMoviesDB:
                         "rating_promedio": {"$avg": "$imdb.rating"}}},
             {"$sort": {"_id": 1}},
         ]
-        return await coll.aggregate(pipeline).to_list(length=None)
+        cursor = await coll.aggregate(pipeline)
+        return await cursor.to_list(length=None)
 
     async def consulta_top_directores(self, n=10):
         coll, _ = await self.coleccion_lectura()
@@ -269,7 +273,8 @@ class AsyncMoviesDB:
             {"$sort": {"total": -1}},
             {"$limit": n},
         ]
-        return await coll.aggregate(pipeline).to_list(length=n)
+        cursor = await coll.aggregate(pipeline)
+        return await cursor.to_list(length=n)
 
     # -- 3b. CONSULTAS CONCURRENTES --------------------------------------
     @staticmethod

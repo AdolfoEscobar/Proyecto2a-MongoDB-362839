@@ -365,7 +365,8 @@ class ColeccionFakeAsync(ColeccionFakeSync):
         await self._espera()
         return super().estimated_document_count()
 
-    def aggregate(self, pipeline):
+    async def aggregate(self, pipeline):
+        # En PyMongo Async real, aggregate() es corutina (find() no).
         return CursorAsync(ejecutar_pipeline(
             list(self.almacen.values()), pipeline))
 
@@ -560,8 +561,25 @@ class TestAppAsync(unittest.TestCase):
         self.assertEqual(ratings, sorted(ratings, reverse=True))
         agg = self._run(self.db.consulta_agregacion_por_genero(5))
         self.assertTrue(all("total" in g for g in agg))
+        por_anio = self._run(self.db.consulta_promedio_por_anio(2000, 2020))
+        self.assertTrue(all("total" in f for f in por_anio))
         directores = self._run(self.db.consulta_top_directores(3))
         self.assertLessEqual(len(directores), 3)
+
+    def test_fakes_replican_api_async_real(self):
+        """Paridad: en PyMongo Async, aggregate() es corutina y find() no.
+
+        Este test impide que los fakes vuelvan a enmascarar un uso
+        incorrecto (bug real: `aggregate(...).to_list(...)` sin await).
+        """
+        import inspect
+
+        from pymongo.asynchronous.collection import AsyncCollection
+
+        self.assertTrue(inspect.iscoroutinefunction(AsyncCollection.aggregate))
+        self.assertTrue(inspect.iscoroutinefunction(
+            ColeccionFakeAsync.aggregate))
+        self.assertFalse(inspect.iscoroutinefunction(AsyncCollection.find))
 
 
 if __name__ == "__main__":
