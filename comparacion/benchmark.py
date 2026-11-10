@@ -94,20 +94,20 @@ async def experimento_consultas_async(db, n_consultas):
             "segundos": segundos}
 
 
-def experimento_update_sync(db, n):
+def experimento_update_sync(db, n, rating=7.5):
     """Actualización masiva secuencial con bulk_write."""
     ids = [d["_id"] for d in
            db.work.find({}, {"_id": 1}).limit(n).sort("_id", 1)]
-    pares = [(i, 7.5) for i in ids]
+    pares = [(i, rating) for i in ids]
     inicio = time.perf_counter()
     mod = db.bulk_actualizar_ratings(pares, tam_lote=1000)
     return {"modificados": mod, "segundos": time.perf_counter() - inicio}
 
 
-async def experimento_update_async(db, n):
+async def experimento_update_async(db, n, rating=7.5):
     ids = [d["_id"] async for d in
            db.work.find({}, {"_id": 1}).sort("_id", 1).limit(n)]
-    pares = [(i, 7.5) for i in ids]
+    pares = [(i, rating) for i in ids]
     inicio = time.perf_counter()
     mod = await db.bulk_actualizar_ratings(pares, tam_lote=1000)
     return {"modificados": mod, "segundos": time.perf_counter() - inicio}
@@ -159,6 +159,7 @@ def main():
             await async_db.ping()
         except Exception as exc:
             print(f"La app asíncrona no pudo conectar: {exc}")
+            await async_db.close()
             return None
         await config.ensure_async_indexes(async_db.work)
 
@@ -198,15 +199,21 @@ def main():
         print(f"\n[C] Actualización masiva de {n_upd} ratings (bulk_write)...")
         t_sync, t_async = [], []
         for r in range(args.repetir):
-            s = experimento_update_sync(sync_db, n_upd)
+            # Alternar el valor para que cada repetición modifique de verdad
+            # (si todos ya valen 7.5, modified_count saldría 0).
+            rating = 7.5 if r % 2 == 0 else 8.5
+            s = experimento_update_sync(sync_db, n_upd, rating)
             t_sync.append(s["segundos"])
             print(f"    sync  rep{r + 1}: {s['segundos']:.2f}s ({s['modificados']} mods)")
-            s = await experimento_update_async(async_db, n_upd)
+            s = await experimento_update_async(async_db, n_upd, rating)
             t_async.append(s["segundos"])
             print(f"    async rep{r + 1}: {s['segundos']:.2f}s ({s['modificados']} mods)")
         resultados["experimentos"]["update_masivo"] = {
             "sync_seg": t_sync, "async_seg": t_async}
         resumen.append(("C. Update masivo", min(t_sync), min(t_async)))
+        # Cerrar DENTRO del mismo loop: AsyncMongoClient no admite usarse
+        # desde otro event loop (ni siquiera para close()).
+        await async_db.close()
         return resumen
 
     resumen = asyncio.run(_correr_todo())
@@ -232,7 +239,6 @@ def main():
     print(f"\nResultados guardados en {ruta}")
 
     sync_db.close()
-    asyncio.run(async_db.close())
     return 0
 
 
