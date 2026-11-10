@@ -1,0 +1,106 @@
+======================================================================
+  EXPLICACIÓN BREVE DEL CÓDIGO - PROYECTO 2a (MongoDB sync vs async)
+  8CC2 Cómputo Paralelo y Distribuido
+  Adolfo Escobar Pereyra - 362839
+======================================================================
+
+RESUMEN
+-------
+Dos programas que administran películas en MongoDB con las MISMAS
+funciones. El síncrono hace una operación a la vez (espera cada
+respuesta); el asíncrono lanza muchas operaciones juntas y aprovecha
+la espera de unas para avanzar otras. Por eso gana cuando el trabajo
+es esperar la red (I/O-bound), no calcular.
+
+Relación entre archivos:
+
+    config.py                      <- URI, BD, clientes, índices
+    dataset/generador_peliculas.py <- crea docs estilo mflix
+        |
+        +-- sync_app/app_sync.py    (MongoClient, secuencial)
+        +-- async_app/app_async.py  (AsyncMongoClient, concurrente)
+                    |
+                    +-- comparacion/benchmark.py (misma carga, mide tiempos)
+                    +-- comparacion/demo_concurrencia.py (simulación sin BD)
+
+
+======================================================================
+1) config.py - Ajustes compartidos
+======================================================================
+  - MONGO_URI (o variable de entorno / .env).
+  - Dos colecciones: sample_mflix.movies (SOLO lectura, si existe) y
+    proyecto2a.movies_carga (escritura y benchmarks; se puede borrar).
+  - get_sync_client() -> MongoClient; get_async_client() -> AsyncMongoClient.
+  - ensure_*_indexes(): índices por title, year, genres, imdb.rating.
+  - elegir_coleccion_lectura(): usa el sample si tiene docs, si no la
+    colección de trabajo (así todo funciona con o sin sample oficial).
+
+
+======================================================================
+2) dataset/generador_peliculas.py - Datos de prueba
+======================================================================
+  - generar_pelicula(rng): un doc con title, year, genres, directors,
+    cast, imdb{rating,votes}, num_mflix_comments, etc. (como mflix).
+  - generar_peliculas(n, semilla): n docs DETERMINISTAS (misma semilla
+    = mismos datos; la semilla por defecto es 362839).
+  - en_lotes(docs, tam): parte la lista en bloques para bulk_write.
+
+
+======================================================================
+3) sync_app/app_sync.py - App SÍNCRONA (PyMongo clásico)
+======================================================================
+Clase SyncMoviesDB (usa MongoClient):
+  Carga masiva:
+    - carga_masiva_insert_many(): lote por lote, uno tras otro.
+    - carga_masiva_bulk_write(): bulk_write([InsertOne...]) por lote.
+  CRUD:
+    - crear_pelicula / obtener_por_id / obtener_por_titulo / listar
+      (paginado con skip+limit) / actualizar_pelicula / actualizar_muchos
+      / eliminar_pelicula / eliminar_muchos / contar / limpiar_trabajo.
+  Consultas:
+    - por_genero, por_rango_anios, top_rating (sort imdb.rating),
+      buscar_titulo (regex insensible), agregacion_por_genero
+      ($unwind+$group+$sort), promedio_por_anio, top_directores.
+  Además: demo() automática y menu() interactivo.
+
+
+======================================================================
+4) async_app/app_async.py - App ASÍNCRONA (PyMongo Async)
+======================================================================
+Clase AsyncMoviesDB (usa AsyncMongoClient; todo con async/await):
+  - Misma API que la síncrona (mismos nombres y consultas).
+  - Carga masiva: carga_masiva_taskgroup() crea UNA TAREA POR LOTE
+    dentro de asyncio.TaskGroup; cada tarea hace bulk_write([InsertOne])
+    bajo asyncio.Semaphore (máximo N lotes a la vez).
+    Variante carga_masiva_gather() hace lo mismo con asyncio.gather().
+  - Consultas concurrentes: consultas_concurrentes_gather() mezcla 5
+    tipos de consulta y las lanza con gather; la versión _taskgroup()
+    usa TaskGroup. Ambas limitadas por Semaphore.
+  - bulk_actualizar_ratings() / bulk_eliminar(): UpdateOne/DeleteOne
+    con bulk_write concurrente por lotes.
+  - El Semaphore se crea DENTRO de cada operación (no en __init__),
+    porque queda ligado al event loop en uso.
+  - Lecturas: find() -> await cursor.to_list(n); aggregate igual.
+
+
+======================================================================
+5) comparacion/benchmark.py - Comparación justa
+======================================================================
+  - Corre la MISMA carga en ambas apps y reporta el mejor de 3 tiempos:
+    A) Carga masiva de N docs.  B) Q consultas mezcladas.
+    C) Update masivo (bulk_write de UpdateOne).
+  - Todo lo async corre en UN solo asyncio.run (un event loop).
+  - Guarda comparacion/resultados_benchmark.json e imprime tabla con
+    speedup = tiempo_sync / tiempo_async.
+  - demo_concurrencia.py: lo mismo pero SIMULADO (sleep en vez de BD)
+    para correr sin MongoDB; muestra speedups ~iguales a la
+    concurrencia cuando hay latencia I/O.
+
+
+======================================================================
+EJEMPLO: CARGA DE 5000 DOCS EN LOTES DE 1000 (5 lotes)
+======================================================================
+  SYNC:  lote1 -> espera -> lote2 -> espera -> ... (secuencial)
+  ASYNC: TaskGroup crea 5 tareas; el Semaphore deja correr hasta N a
+         la vez; cada tarea hace bulk_write y avisa al terminar.
+         Mientras el servidor procesa un lote, ya se envió el siguiente.

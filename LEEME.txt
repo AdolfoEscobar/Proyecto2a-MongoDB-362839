@@ -1,0 +1,32 @@
+Universidad Autonoma de Chihuahua
+8CC2 - Computo Paralelo y Distribuido
+Alumno: Adolfo Escobar Pereyra  |  Matricula: 362839
+Profesor: Jose Saul de Lira Miramontes
+
+------------------------------------------------
+Proyecto 2a - Base de datos asincrona (Python + MongoDB)
+Carpeta: Proyecto2a_MongoDB_362839
+SI necesita venv, porque usa pymongo.
+
+  cd Proyecto2a_MongoDB_362839
+  python3 -m venv .venv
+  source .venv/bin/activate
+  pip install -r requirements.txt
+  cp .env.example .env   # editar MONGO_URI si usas Atlas
+  python -m scripts.verificar_conexion
+
+Uso rapido (con MongoDB corriendo):
+  python -m sync_app.app_sync --demo --n 2000
+  python -m async_app.app_async --demo --n 2000 --concurrencia 10
+  python -m comparacion.benchmark --n 5000 --consultas 50
+
+Sin MongoDB (verificacion y demo simulada):
+  python -m unittest discover -s tests -v
+  python -m comparacion.demo_concurrencia
+
+Notas:
+- Requiere Python 3.11+ (asyncio.TaskGroup).
+- sample_mflix.movies solo se lee; lo que se escribe va a
+  proyecto2a.movies_carga (seguro de borrar).
+- Si no tienes el sample oficial, el generador incluido crea
+  documentos compatibles con el mismo esquema.

@@ -1,0 +1,1457 @@
+[
+ {
+  "title": "Crónicas ancestrales 508",
+  "year": 2005,
+  "runtime": 163,
+  "rated": "PASSED",
+  "plot": "Una historia de superación en tiempos difíciles.",
+  "fullplot": "Un misterio que desafía todo lo que creían saber. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Aventura",
+   "Drama",
+   "Thriller"
+  ],
+  "directors": [
+   "Jonás Trueba"
+  ],
+  "writers": [
+   "Andrés Aguilar",
+   "María Fernández"
+  ],
+  "cast": [
+   "Sofía Hernández",
+   "Andrés Aguilar",
+   "Jorge Ramos"
+  ],
+  "languages": [
+   "Portugués"
+  ],
+  "countries": [
+   "México"
+  ],
+  "released": "2005-06-10 00:00:00",
+  "poster": "https://example.com/posters/78399.jpg",
+  "imdb": {
+   "rating": 8.2,
+   "votes": 144415,
+   "id": 8664501
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 1.2,
+    "numReviews": 51516
+   },
+   "lastUpdated": "2005-01-01 00:00:00"
+  },
+  "num_mflix_comments": 68,
+  "type": "movie"
+ },
+ {
+  "title": "Horizonte del valle 290",
+  "year": 1972,
+  "runtime": 169,
+  "rated": "UNRATED",
+  "plot": "Un viaje inesperado que revela secretos del pasado.",
+  "fullplot": "Un misterio que desafía todo lo que creían saber. Un viaje inesperado que revela secretos del pasado.",
+  "genres": [
+   "Romance",
+   "Fantasía"
+  ],
+  "directors": [
+   "Icíar Bollaín"
+  ],
+  "writers": [
+   "Hugo Delgado"
+  ],
+  "cast": [
+   "Valeria Ríos",
+   "Juan García",
+   "María Fernández"
+  ],
+  "languages": [
+   "Español"
+  ],
+  "countries": [
+   "EE. UU.",
+   "México"
+  ],
+  "released": "1972-05-05 00:00:00",
+  "poster": "https://example.com/posters/65497.jpg",
+  "imdb": {
+   "rating": 9.4,
+   "votes": 405380,
+   "id": 968398
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 3.9,
+    "numReviews": 95440
+   },
+   "lastUpdated": "1972-01-01 00:00:00"
+  },
+  "num_mflix_comments": 136,
+  "type": "movie"
+ },
+ {
+  "title": "Voces del silencio 794",
+  "year": 1993,
+  "runtime": 102,
+  "rated": "UNRATED",
+  "plot": "Un viaje inesperado que revela secretos del pasado.",
+  "fullplot": "Un viaje inesperado que revela secretos del pasado. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Terror"
+  ],
+  "directors": [
+   "Damián Szifron"
+  ],
+  "writers": [
+   "Jorge Ramos",
+   "Ana López",
+   "Carmen Ortega"
+  ],
+  "cast": [
+   "Lucía Torres",
+   "Elena Castro",
+   "Carlos Ruiz"
+  ],
+  "languages": [
+   "Alemán",
+   "Francés"
+  ],
+  "countries": [
+   "Chile",
+   "Colombia"
+  ],
+  "released": "1993-08-27 00:00:00",
+  "poster": "https://example.com/posters/10900.jpg",
+  "imdb": {
+   "rating": 3.9,
+   "votes": 139555,
+   "id": 331993
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 5.0,
+    "numReviews": 56356
+   },
+   "lastUpdated": "1993-01-01 00:00:00"
+  },
+  "num_mflix_comments": 87,
+  "type": "movie"
+ },
+ {
+  "title": "Senderos del desierto 680",
+  "year": 2004,
+  "runtime": 84,
+  "rated": "R",
+  "plot": "Un viaje inesperado que revela secretos del pasado.",
+  "fullplot": "Retrato íntimo de una familia a lo largo de tres generaciones. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Documental"
+  ],
+  "directors": [
+   "Alfonso Cuarón",
+   "Alejandro González"
+  ],
+  "writers": [
+   "Andrés Aguilar"
+  ],
+  "cast": [
+   "Jorge Ramos",
+   "Ana López",
+   "Valeria Ríos"
+  ],
+  "languages": [
+   "Francés"
+  ],
+  "countries": [
+   "México"
+  ],
+  "released": "2004-08-10 00:00:00",
+  "poster": "https://example.com/posters/86198.jpg",
+  "imdb": {
+   "rating": 6.4,
+   "votes": 43826,
+   "id": 7916959
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 4.4,
+    "numReviews": 91625
+   },
+   "lastUpdated": "2004-01-01 00:00:00"
+  },
+  "num_mflix_comments": 136,
+  "type": "movie"
+ },
+ {
+  "title": "Leyendas del silencio 129",
+  "year": 2000,
+  "runtime": 164,
+  "rated": "PG-13",
+  "plot": "Una historia de superación en tiempos difíciles.",
+  "fullplot": "Un misterio que desafía todo lo que creían saber. Una historia de superación en tiempos difíciles.",
+  "genres": [
+   "Comedia",
+   "Crimen"
+  ],
+  "directors": [
+   "Pablo Larraín",
+   "Icíar Bollaín"
+  ],
+  "writers": [
+   "Elena Castro"
+  ],
+  "cast": [
+   "Miguel Vargas",
+   "Diego Morales",
+   "Juan García"
+  ],
+  "languages": [
+   "Francés"
+  ],
+  "countries": [
+   "Chile",
+   "EE. UU."
+  ],
+  "released": "2000-06-02 00:00:00",
+  "poster": "https://example.com/posters/34417.jpg",
+  "imdb": {
+   "rating": 7.8,
+   "votes": 220647,
+   "id": 6454389
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 1.8,
+    "numReviews": 34120
+   },
+   "lastUpdated": "2000-01-01 00:00:00"
+  },
+  "num_mflix_comments": 19,
+  "type": "movie"
+ },
+ {
+  "title": "Cenizas del mañana 602",
+  "year": 1955,
+  "runtime": 165,
+  "rated": "PASSED",
+  "plot": "Dos desconocidos se encuentran y cambian sus vidas para siempre.",
+  "fullplot": "Dos desconocidos se encuentran y cambian sus vidas para siempre. Dos desconocidos se encuentran y cambian sus vidas para siempre.",
+  "genres": [
+   "Fantasía",
+   "Misterio",
+   "Thriller"
+  ],
+  "directors": [
+   "Alejandro González"
+  ],
+  "writers": [
+   "Miguel Vargas",
+   "Juan García",
+   "Carmen Ortega"
+  ],
+  "cast": [
+   "Ana López",
+   "Carlos Ruiz"
+  ],
+  "languages": [
+   "Portugués"
+  ],
+  "countries": [
+   "Argentina",
+   "México"
+  ],
+  "released": "1955-09-11 00:00:00",
+  "poster": "https://example.com/posters/42244.jpg",
+  "imdb": {
+   "rating": 4.2,
+   "votes": 251397,
+   "id": 6760340
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 4.7,
+    "numReviews": 30351
+   },
+   "lastUpdated": "1955-01-01 00:00:00"
+  },
+  "num_mflix_comments": 116,
+  "type": "movie"
+ },
+ {
+  "title": "Crepúsculo del mañana 194",
+  "year": 2010,
+  "runtime": 189,
+  "rated": "PG-13",
+  "plot": "Una historia de superación en tiempos difíciles.",
+  "fullplot": "Una historia de superación en tiempos difíciles. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Thriller",
+   "Acción",
+   "Comedia"
+  ],
+  "directors": [
+   "Alfonso Cuarón",
+   "Jonás Trueba"
+  ],
+  "writers": [
+   "Carmen Ortega",
+   "Hugo Delgado",
+   "María Fernández"
+  ],
+  "cast": [
+   "Raúl Mendoza",
+   "Jorge Ramos",
+   "Carlos Ruiz",
+   "Hugo Delgado",
+   "María Fernández"
+  ],
+  "languages": [
+   "Alemán",
+   "Francés"
+  ],
+  "countries": [
+   "Colombia"
+  ],
+  "released": "2010-07-07 00:00:00",
+  "poster": "https://example.com/posters/52345.jpg",
+  "imdb": {
+   "rating": 6.1,
+   "votes": 75749,
+   "id": 21067
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 2.0,
+    "numReviews": 38048
+   },
+   "lastUpdated": "2010-01-01 00:00:00"
+  },
+  "num_mflix_comments": 240,
+  "type": "movie"
+ },
+ {
+  "title": "Memorias ancestrales 533",
+  "year": 1987,
+  "runtime": 129,
+  "rated": "G",
+  "plot": "Un viaje inesperado que revela secretos del pasado.",
+  "fullplot": "Retrato íntimo de una familia a lo largo de tres generaciones. Una historia de superación en tiempos difíciles.",
+  "genres": [
+   "Romance",
+   "Crimen"
+  ],
+  "directors": [
+   "Alejandro González"
+  ],
+  "writers": [
+   "Sofía Hernández"
+  ],
+  "cast": [
+   "Ana López",
+   "Valeria Ríos",
+   "María Fernández"
+  ],
+  "languages": [
+   "Francés"
+  ],
+  "countries": [
+   "Argentina"
+  ],
+  "released": "1987-11-10 00:00:00",
+  "poster": "https://example.com/posters/56290.jpg",
+  "imdb": {
+   "rating": 4.1,
+   "votes": 453967,
+   "id": 9153334
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 3.7,
+    "numReviews": 64227
+   },
+   "lastUpdated": "1987-01-01 00:00:00"
+  },
+  "num_mflix_comments": 96,
+  "type": "movie"
+ },
+ {
+  "title": "Horizonte de cristal 813",
+  "year": 2011,
+  "runtime": 196,
+  "rated": "PASSED",
+  "plot": "Retrato íntimo de una familia a lo largo de tres generaciones.",
+  "fullplot": "Dos desconocidos se encuentran y cambian sus vidas para siempre. Aventura épica a través de tierras desconocidas.",
+  "genres": [
+   "Terror",
+   "Aventura",
+   "Misterio"
+  ],
+  "directors": [
+   "Alejandro González"
+  ],
+  "writers": [
+   "Diego Morales",
+   "Hugo Delgado",
+   "Juan García"
+  ],
+  "cast": [
+   "Diego Morales",
+   "Juan García"
+  ],
+  "languages": [
+   "Portugués"
+  ],
+  "countries": [
+   "Colombia",
+   "EE. UU."
+  ],
+  "released": "2011-08-16 00:00:00",
+  "poster": "https://example.com/posters/17447.jpg",
+  "imdb": {
+   "rating": 9.8,
+   "votes": 152472,
+   "id": 2115039
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 1.5,
+    "numReviews": 3336
+   },
+   "lastUpdated": "2011-01-01 00:00:00"
+  },
+  "num_mflix_comments": 13,
+  "type": "movie"
+ },
+ {
+  "title": "Destinos de cristal 564",
+  "year": 1997,
+  "runtime": 119,
+  "rated": "G",
+  "plot": "Un viaje inesperado que revela secretos del pasado.",
+  "fullplot": "Un misterio que desafía todo lo que creían saber. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Drama",
+   "Sci-Fi",
+   "Terror"
+  ],
+  "directors": [
+   "Carla Simón",
+   "Lucrecia Martel"
+  ],
+  "writers": [
+   "Juan García"
+  ],
+  "cast": [
+   "Juan García",
+   "Valeria Ríos",
+   "Carmen Ortega"
+  ],
+  "languages": [
+   "Francés",
+   "Alemán"
+  ],
+  "countries": [
+   "Chile"
+  ],
+  "released": "1997-04-18 00:00:00",
+  "poster": "https://example.com/posters/81850.jpg",
+  "imdb": {
+   "rating": 3.8,
+   "votes": 85551,
+   "id": 1569059
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 2.4,
+    "numReviews": 8890
+   },
+   "lastUpdated": "1997-01-01 00:00:00"
+  },
+  "num_mflix_comments": 278,
+  "type": "movie"
+ },
+ {
+  "title": "Laberinto del mañana 241",
+  "year": 1986,
+  "runtime": 108,
+  "rated": "PG-13",
+  "plot": "Dos desconocidos se encuentran y cambian sus vidas para siempre.",
+  "fullplot": "Dos desconocidos se encuentran y cambian sus vidas para siempre. Aventura épica a través de tierras desconocidas.",
+  "genres": [
+   "Misterio",
+   "Crimen",
+   "Sci-Fi"
+  ],
+  "directors": [
+   "Pablo Larraín",
+   "Carla Simón"
+  ],
+  "writers": [
+   "Juan García",
+   "Raúl Mendoza"
+  ],
+  "cast": [
+   "Hugo Delgado",
+   "Andrés Aguilar",
+   "Sofía Hernández"
+  ],
+  "languages": [
+   "Portugués",
+   "Español"
+  ],
+  "countries": [
+   "Argentina",
+   "España"
+  ],
+  "released": "1986-11-04 00:00:00",
+  "poster": "https://example.com/posters/66615.jpg",
+  "imdb": {
+   "rating": 6.0,
+   "votes": 80373,
+   "id": 5347487
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 1.0,
+    "numReviews": 97187
+   },
+   "lastUpdated": "1986-01-01 00:00:00"
+  },
+  "num_mflix_comments": 76,
+  "type": "movie"
+ },
+ {
+  "title": "Secretos de cristal 1",
+  "year": 2001,
+  "runtime": 106,
+  "rated": "PG",
+  "plot": "Una historia de superación en tiempos difíciles.",
+  "fullplot": "Un misterio que desafía todo lo que creían saber. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Fantasía",
+   "Comedia",
+   "Sci-Fi"
+  ],
+  "directors": [
+   "Pablo Larraín",
+   "Alejandro González"
+  ],
+  "writers": [
+   "Miguel Vargas",
+   "Hugo Delgado",
+   "Ana López"
+  ],
+  "cast": [
+   "Elena Castro",
+   "Jorge Ramos",
+   "Diego Morales",
+   "Raúl Mendoza"
+  ],
+  "languages": [
+   "Inglés"
+  ],
+  "countries": [
+   "Colombia"
+  ],
+  "released": "2001-05-19 00:00:00",
+  "poster": "https://example.com/posters/95059.jpg",
+  "imdb": {
+   "rating": 3.2,
+   "votes": 182670,
+   "id": 6685305
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 3.6,
+    "numReviews": 7591
+   },
+   "lastUpdated": "2001-01-01 00:00:00"
+  },
+  "num_mflix_comments": 132,
+  "type": "movie"
+ },
+ {
+  "title": "Tiempos del silencio 980",
+  "year": 1973,
+  "runtime": 138,
+  "rated": "UNRATED",
+  "plot": "Un misterio que desafía todo lo que creían saber.",
+  "fullplot": "Aventura épica a través de tierras desconocidas. Retrato íntimo de una familia a lo largo de tres generaciones.",
+  "genres": [
+   "Aventura",
+   "Misterio",
+   "Crimen"
+  ],
+  "directors": [
+   "Pablo Larraín"
+  ],
+  "writers": [
+   "Andrés Aguilar"
+  ],
+  "cast": [
+   "Carlos Ruiz",
+   "Lucía Torres",
+   "Andrés Aguilar"
+  ],
+  "languages": [
+   "Alemán"
+  ],
+  "countries": [
+   "Colombia"
+  ],
+  "released": "1973-05-12 00:00:00",
+  "poster": "https://example.com/posters/31723.jpg",
+  "imdb": {
+   "rating": 8.6,
+   "votes": 327991,
+   "id": 8697218
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 4.2,
+    "numReviews": 4560
+   },
+   "lastUpdated": "1973-01-01 00:00:00"
+  },
+  "num_mflix_comments": 217,
+  "type": "movie"
+ },
+ {
+  "title": "Voces del mañana 411",
+  "year": 1978,
+  "runtime": 125,
+  "rated": "G",
+  "plot": "Aventura épica a través de tierras desconocidas.",
+  "fullplot": "Aventura épica a través de tierras desconocidas. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Acción"
+  ],
+  "directors": [
+   "Guillermo del Toro",
+   "Alejandro González"
+  ],
+  "writers": [
+   "Paula Jiménez",
+   "Jorge Ramos",
+   "Miguel Vargas"
+  ],
+  "cast": [
+   "María Fernández",
+   "Diego Morales",
+   "Carmen Ortega",
+   "Elena Castro"
+  ],
+  "languages": [
+   "Español"
+  ],
+  "countries": [
+   "Chile"
+  ],
+  "released": "1978-08-19 00:00:00",
+  "poster": "https://example.com/posters/28347.jpg",
+  "imdb": {
+   "rating": 9.3,
+   "votes": 471874,
+   "id": 4995780
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 1.3,
+    "numReviews": 56762
+   },
+   "lastUpdated": "1978-01-01 00:00:00"
+  },
+  "num_mflix_comments": 120,
+  "type": "movie"
+ },
+ {
+  "title": "Senderos de papel 621",
+  "year": 2018,
+  "runtime": 95,
+  "rated": "R",
+  "plot": "Un misterio que desafía todo lo que creían saber.",
+  "fullplot": "Una historia de superación en tiempos difíciles. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Terror",
+   "Thriller"
+  ],
+  "directors": [
+   "María Novaro",
+   "Pablo Larraín"
+  ],
+  "writers": [
+   "Andrés Aguilar"
+  ],
+  "cast": [
+   "Hugo Delgado",
+   "Raúl Mendoza",
+   "María Fernández",
+   "Valeria Ríos",
+   "Jorge Ramos"
+  ],
+  "languages": [
+   "Inglés",
+   "Portugués"
+  ],
+  "countries": [
+   "México",
+   "Argentina"
+  ],
+  "released": "2018-09-12 00:00:00",
+  "poster": "https://example.com/posters/15248.jpg",
+  "imdb": {
+   "rating": 5.8,
+   "votes": 468722,
+   "id": 6470123
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 2.7,
+    "numReviews": 23402
+   },
+   "lastUpdated": "2018-01-01 00:00:00"
+  },
+  "num_mflix_comments": 284,
+  "type": "movie"
+ },
+ {
+  "title": "Tiempos ancestrales 961",
+  "year": 1987,
+  "runtime": 210,
+  "rated": "PG-13",
+  "plot": "Un misterio que desafía todo lo que creían saber.",
+  "fullplot": "Aventura épica a través de tierras desconocidas. Dos desconocidos se encuentran y cambian sus vidas para siempre.",
+  "genres": [
+   "Comedia"
+  ],
+  "directors": [
+   "Pablo Larraín"
+  ],
+  "writers": [
+   "Andrés Aguilar",
+   "Ana López",
+   "Carlos Ruiz"
+  ],
+  "cast": [
+   "Juan García",
+   "Elena Castro",
+   "Ana López",
+   "Valeria Ríos"
+  ],
+  "languages": [
+   "Inglés",
+   "Portugués"
+  ],
+  "countries": [
+   "Chile",
+   "Argentina"
+  ],
+  "released": "1987-07-28 00:00:00",
+  "poster": "https://example.com/posters/20933.jpg",
+  "imdb": {
+   "rating": 3.7,
+   "votes": 321823,
+   "id": 2371328
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 1.4,
+    "numReviews": 30724
+   },
+   "lastUpdated": "1987-01-01 00:00:00"
+  },
+  "num_mflix_comments": 65,
+  "type": "movie"
+ },
+ {
+  "title": "Secretos de medianoche 927",
+  "year": 1976,
+  "runtime": 146,
+  "rated": "PG-13",
+  "plot": "Una historia de superación en tiempos difíciles.",
+  "fullplot": "Aventura épica a través de tierras desconocidas. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Crimen",
+   "Comedia"
+  ],
+  "directors": [
+   "Jonás Trueba"
+  ],
+  "writers": [
+   "Hugo Delgado",
+   "María Fernández",
+   "Carlos Ruiz"
+  ],
+  "cast": [
+   "Carmen Ortega",
+   "Miguel Vargas",
+   "Lucía Torres",
+   "Diego Morales"
+  ],
+  "languages": [
+   "Español",
+   "Portugués"
+  ],
+  "countries": [
+   "EE. UU.",
+   "México"
+  ],
+  "released": "1976-01-21 00:00:00",
+  "poster": "https://example.com/posters/4782.jpg",
+  "imdb": {
+   "rating": 3.4,
+   "votes": 63470,
+   "id": 8655475
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 2.4,
+    "numReviews": 2921
+   },
+   "lastUpdated": "1976-01-01 00:00:00"
+  },
+  "num_mflix_comments": 76,
+  "type": "movie"
+ },
+ {
+  "title": "Leyendas de neón 475",
+  "year": 1962,
+  "runtime": 85,
+  "rated": "PASSED",
+  "plot": "Aventura épica a través de tierras desconocidas.",
+  "fullplot": "Retrato íntimo de una familia a lo largo de tres generaciones. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Fantasía",
+   "Crimen"
+  ],
+  "directors": [
+   "Carla Simón",
+   "Icíar Bollaín"
+  ],
+  "writers": [
+   "Ana López",
+   "Carlos Ruiz"
+  ],
+  "cast": [
+   "Miguel Vargas",
+   "Valeria Ríos",
+   "Carmen Ortega",
+   "Juan García"
+  ],
+  "languages": [
+   "Francés"
+  ],
+  "countries": [
+   "Colombia",
+   "México"
+  ],
+  "released": "1962-04-07 00:00:00",
+  "poster": "https://example.com/posters/42992.jpg",
+  "imdb": {
+   "rating": 5.1,
+   "votes": 499967,
+   "id": 2112467
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 2.7,
+    "numReviews": 57919
+   },
+   "lastUpdated": "1962-01-01 00:00:00"
+  },
+  "num_mflix_comments": 164,
+  "type": "movie"
+ },
+ {
+  "title": "Horizonte perdidos 150",
+  "year": 1969,
+  "runtime": 205,
+  "rated": "R",
+  "plot": "Un viaje inesperado que revela secretos del pasado.",
+  "fullplot": "Aventura épica a través de tierras desconocidas. Dos desconocidos se encuentran y cambian sus vidas para siempre.",
+  "genres": [
+   "Terror",
+   "Comedia",
+   "Acción"
+  ],
+  "directors": [
+   "Pablo Larraín",
+   "Guillermo del Toro"
+  ],
+  "writers": [
+   "Valeria Ríos",
+   "Juan García",
+   "Diego Morales"
+  ],
+  "cast": [
+   "Hugo Delgado",
+   "Jorge Ramos",
+   "Andrés Aguilar",
+   "Lucía Torres",
+   "María Fernández"
+  ],
+  "languages": [
+   "Italiano"
+  ],
+  "countries": [
+   "México",
+   "EE. UU."
+  ],
+  "released": "1969-02-22 00:00:00",
+  "poster": "https://example.com/posters/33279.jpg",
+  "imdb": {
+   "rating": 2.7,
+   "votes": 147250,
+   "id": 868482
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 4.8,
+    "numReviews": 4145
+   },
+   "lastUpdated": "1969-01-01 00:00:00"
+  },
+  "num_mflix_comments": 152,
+  "type": "movie"
+ },
+ {
+  "title": "Laberinto del puerto 439",
+  "year": 1970,
+  "runtime": 201,
+  "rated": "PG",
+  "plot": "Aventura épica a través de tierras desconocidas.",
+  "fullplot": "Aventura épica a través de tierras desconocidas. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Sci-Fi",
+   "Comedia",
+   "Acción"
+  ],
+  "directors": [
+   "Carla Simón",
+   "Lucrecia Martel"
+  ],
+  "writers": [
+   "Raúl Mendoza",
+   "Lucía Torres",
+   "María Fernández"
+  ],
+  "cast": [
+   "Ana López",
+   "Lucía Torres"
+  ],
+  "languages": [
+   "Francés",
+   "Español"
+  ],
+  "countries": [
+   "Colombia",
+   "EE. UU."
+  ],
+  "released": "1970-01-08 00:00:00",
+  "poster": "https://example.com/posters/94714.jpg",
+  "imdb": {
+   "rating": 2.0,
+   "votes": 424772,
+   "id": 1131586
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 4.7,
+    "numReviews": 89669
+   },
+   "lastUpdated": "1970-01-01 00:00:00"
+  },
+  "num_mflix_comments": 250,
+  "type": "movie"
+ },
+ {
+  "title": "Horizonte ancestrales 639",
+  "year": 2009,
+  "runtime": 133,
+  "rated": "R",
+  "plot": "Una historia de superación en tiempos difíciles.",
+  "fullplot": "Un viaje inesperado que revela secretos del pasado. Una historia de superación en tiempos difíciles.",
+  "genres": [
+   "Terror",
+   "Misterio",
+   "Acción"
+  ],
+  "directors": [
+   "Damián Szifron",
+   "Guillermo del Toro"
+  ],
+  "writers": [
+   "Carlos Ruiz",
+   "Carmen Ortega",
+   "Sofía Hernández"
+  ],
+  "cast": [
+   "Ana López",
+   "Diego Morales"
+  ],
+  "languages": [
+   "Alemán"
+  ],
+  "countries": [
+   "México"
+  ],
+  "released": "2009-03-28 00:00:00",
+  "poster": "https://example.com/posters/24851.jpg",
+  "imdb": {
+   "rating": 4.0,
+   "votes": 467801,
+   "id": 5000151
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 1.5,
+    "numReviews": 13734
+   },
+   "lastUpdated": "2009-01-01 00:00:00"
+  },
+  "num_mflix_comments": 106,
+  "type": "movie"
+ },
+ {
+  "title": "Sombras olvidados 174",
+  "year": 2003,
+  "runtime": 112,
+  "rated": "PG",
+  "plot": "Dos desconocidos se encuentran y cambian sus vidas para siempre.",
+  "fullplot": "Un misterio que desafía todo lo que creían saber. Dos desconocidos se encuentran y cambian sus vidas para siempre.",
+  "genres": [
+   "Terror",
+   "Sci-Fi",
+   "Misterio"
+  ],
+  "directors": [
+   "Jonás Trueba",
+   "Icíar Bollaín"
+  ],
+  "writers": [
+   "Andrés Aguilar",
+   "Sofía Hernández",
+   "Diego Morales"
+  ],
+  "cast": [
+   "Sofía Hernández",
+   "Valeria Ríos",
+   "Diego Morales",
+   "María Fernández",
+   "Miguel Vargas"
+  ],
+  "languages": [
+   "Portugués",
+   "Español"
+  ],
+  "countries": [
+   "España",
+   "Argentina"
+  ],
+  "released": "2003-02-01 00:00:00",
+  "poster": "https://example.com/posters/76864.jpg",
+  "imdb": {
+   "rating": 4.2,
+   "votes": 165277,
+   "id": 2180428
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 4.8,
+    "numReviews": 47574
+   },
+   "lastUpdated": "2003-01-01 00:00:00"
+  },
+  "num_mflix_comments": 120,
+  "type": "movie"
+ },
+ {
+  "title": "Cenizas del norte 728",
+  "year": 1967,
+  "runtime": 184,
+  "rated": "R",
+  "plot": "Retrato íntimo de una familia a lo largo de tres generaciones.",
+  "fullplot": "Aventura épica a través de tierras desconocidas. Un viaje inesperado que revela secretos del pasado.",
+  "genres": [
+   "Misterio"
+  ],
+  "directors": [
+   "Carla Simón",
+   "Alfonso Cuarón"
+  ],
+  "writers": [
+   "Ana López"
+  ],
+  "cast": [
+   "Juan García",
+   "Elena Castro",
+   "Ana López"
+  ],
+  "languages": [
+   "Francés",
+   "Inglés"
+  ],
+  "countries": [
+   "Argentina"
+  ],
+  "released": "1967-11-10 00:00:00",
+  "poster": "https://example.com/posters/20114.jpg",
+  "imdb": {
+   "rating": 8.9,
+   "votes": 32869,
+   "id": 2030836
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 3.3,
+    "numReviews": 31116
+   },
+   "lastUpdated": "1967-01-01 00:00:00"
+  },
+  "num_mflix_comments": 44,
+  "type": "movie"
+ },
+ {
+  "title": "Crepúsculo olvidados 950",
+  "year": 1951,
+  "runtime": 143,
+  "rated": "PG",
+  "plot": "Dos desconocidos se encuentran y cambian sus vidas para siempre.",
+  "fullplot": "Una historia de superación en tiempos difíciles. Un viaje inesperado que revela secretos del pasado.",
+  "genres": [
+   "Acción"
+  ],
+  "directors": [
+   "Pablo Larraín"
+  ],
+  "writers": [
+   "María Fernández",
+   "Carmen Ortega",
+   "Elena Castro"
+  ],
+  "cast": [
+   "Carmen Ortega",
+   "Carlos Ruiz",
+   "Elena Castro"
+  ],
+  "languages": [
+   "Portugués"
+  ],
+  "countries": [
+   "México"
+  ],
+  "released": "1951-04-11 00:00:00",
+  "poster": "https://example.com/posters/25542.jpg",
+  "imdb": {
+   "rating": 6.3,
+   "votes": 52632,
+   "id": 1358732
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 4.3,
+    "numReviews": 68690
+   },
+   "lastUpdated": "1951-01-01 00:00:00"
+  },
+  "num_mflix_comments": 5,
+  "type": "movie"
+ },
+ {
+  "title": "Marea del mañana 270",
+  "year": 1970,
+  "runtime": 99,
+  "rated": "PG-13",
+  "plot": "Retrato íntimo de una familia a lo largo de tres generaciones.",
+  "fullplot": "Retrato íntimo de una familia a lo largo de tres generaciones. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Fantasía"
+  ],
+  "directors": [
+   "Jonás Trueba",
+   "Damián Szifron"
+  ],
+  "writers": [
+   "Andrés Aguilar",
+   "Elena Castro",
+   "Ana López"
+  ],
+  "cast": [
+   "Paula Jiménez",
+   "Elena Castro",
+   "Carlos Ruiz"
+  ],
+  "languages": [
+   "Español",
+   "Italiano"
+  ],
+  "countries": [
+   "México"
+  ],
+  "released": "1970-11-19 00:00:00",
+  "poster": "https://example.com/posters/71597.jpg",
+  "imdb": {
+   "rating": 6.6,
+   "votes": 176905,
+   "id": 9203334
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 2.4,
+    "numReviews": 16100
+   },
+   "lastUpdated": "1970-01-01 00:00:00"
+  },
+  "num_mflix_comments": 204,
+  "type": "movie"
+ },
+ {
+  "title": "Senderos del puerto 123",
+  "year": 2002,
+  "runtime": 102,
+  "rated": "UNRATED",
+  "plot": "Una historia de superación en tiempos difíciles.",
+  "fullplot": "Retrato íntimo de una familia a lo largo de tres generaciones. Un viaje inesperado que revela secretos del pasado.",
+  "genres": [
+   "Crimen"
+  ],
+  "directors": [
+   "Alfonso Cuarón",
+   "Damián Szifron"
+  ],
+  "writers": [
+   "Elena Castro",
+   "Valeria Ríos",
+   "Ana López"
+  ],
+  "cast": [
+   "Carmen Ortega",
+   "Diego Morales",
+   "Lucía Torres",
+   "Raúl Mendoza",
+   "Valeria Ríos"
+  ],
+  "languages": [
+   "Portugués",
+   "Alemán"
+  ],
+  "countries": [
+   "México",
+   "España"
+  ],
+  "released": "2002-08-04 00:00:00",
+  "poster": "https://example.com/posters/37554.jpg",
+  "imdb": {
+   "rating": 3.0,
+   "votes": 383872,
+   "id": 1776700
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 4.1,
+    "numReviews": 32358
+   },
+   "lastUpdated": "2002-01-01 00:00:00"
+  },
+  "num_mflix_comments": 171,
+  "type": "movie"
+ },
+ {
+  "title": "Leyendas del valle 178",
+  "year": 1960,
+  "runtime": 117,
+  "rated": "G",
+  "plot": "Retrato íntimo de una familia a lo largo de tres generaciones.",
+  "fullplot": "Dos desconocidos se encuentran y cambian sus vidas para siempre. Aventura épica a través de tierras desconocidas.",
+  "genres": [
+   "Fantasía"
+  ],
+  "directors": [
+   "Lucrecia Martel",
+   "Guillermo del Toro"
+  ],
+  "writers": [
+   "Diego Morales",
+   "Hugo Delgado",
+   "Jorge Ramos"
+  ],
+  "cast": [
+   "Jorge Ramos",
+   "Elena Castro"
+  ],
+  "languages": [
+   "Portugués",
+   "Francés"
+  ],
+  "countries": [
+   "México",
+   "Chile"
+  ],
+  "released": "1960-08-09 00:00:00",
+  "poster": "https://example.com/posters/37504.jpg",
+  "imdb": {
+   "rating": 7.8,
+   "votes": 131716,
+   "id": 7927027
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 2.6,
+    "numReviews": 89899
+   },
+   "lastUpdated": "1960-01-01 00:00:00"
+  },
+  "num_mflix_comments": 288,
+  "type": "movie"
+ },
+ {
+  "title": "Destinos del mañana 99",
+  "year": 2016,
+  "runtime": 200,
+  "rated": "R",
+  "plot": "Aventura épica a través de tierras desconocidas.",
+  "fullplot": "Un viaje inesperado que revela secretos del pasado. Dos desconocidos se encuentran y cambian sus vidas para siempre.",
+  "genres": [
+   "Fantasía",
+   "Comedia"
+  ],
+  "directors": [
+   "Lucrecia Martel",
+   "Pablo Larraín"
+  ],
+  "writers": [
+   "Andrés Aguilar",
+   "Hugo Delgado"
+  ],
+  "cast": [
+   "María Fernández",
+   "Carmen Ortega",
+   "Miguel Vargas"
+  ],
+  "languages": [
+   "Francés"
+  ],
+  "countries": [
+   "Chile"
+  ],
+  "released": "2016-03-16 00:00:00",
+  "poster": "https://example.com/posters/54723.jpg",
+  "imdb": {
+   "rating": 9.9,
+   "votes": 255083,
+   "id": 217697
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 4.9,
+    "numReviews": 9783
+   },
+   "lastUpdated": "2016-01-01 00:00:00"
+  },
+  "num_mflix_comments": 100,
+  "type": "movie"
+ },
+ {
+  "title": "Senderos de neón 478",
+  "year": 1959,
+  "runtime": 208,
+  "rated": "PG-13",
+  "plot": "Aventura épica a través de tierras desconocidas.",
+  "fullplot": "Un misterio que desafía todo lo que creían saber. Un misterio que desafía todo lo que creían saber.",
+  "genres": [
+   "Terror"
+  ],
+  "directors": [
+   "María Novaro",
+   "Damián Szifron"
+  ],
+  "writers": [
+   "Jorge Ramos",
+   "Sofía Hernández",
+   "Carlos Ruiz"
+  ],
+  "cast": [
+   "Miguel Vargas",
+   "Andrés Aguilar",
+   "Sofía Hernández",
+   "Hugo Delgado",
+   "Elena Castro"
+  ],
+  "languages": [
+   "Alemán"
+  ],
+  "countries": [
+   "Argentina",
+   "España"
+  ],
+  "released": "1959-06-19 00:00:00",
+  "poster": "https://example.com/posters/18660.jpg",
+  "imdb": {
+   "rating": 3.8,
+   "votes": 151278,
+   "id": 3701374
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 3.1,
+    "numReviews": 72540
+   },
+   "lastUpdated": "1959-01-01 00:00:00"
+  },
+  "num_mflix_comments": 3,
+  "type": "movie"
+ },
+ {
+  "title": "Leyendas del silencio 395",
+  "year": 2012,
+  "runtime": 207,
+  "rated": "UNRATED",
+  "plot": "Aventura épica a través de tierras desconocidas.",
+  "fullplot": "Retrato íntimo de una familia a lo largo de tres generaciones. Retrato íntimo de una familia a lo largo de tres generaciones.",
+  "genres": [
+   "Crimen"
+  ],
+  "directors": [
+   "Alejandro González",
+   "Icíar Bollaín"
+  ],
+  "writers": [
+   "Lucía Torres",
+   "Hugo Delgado",
+   "Juan García"
+  ],
+  "cast": [
+   "Miguel Vargas",
+   "Ana López",
+   "Carlos Ruiz",
+   "Hugo Delgado"
+  ],
+  "languages": [
+   "Inglés",
+   "Francés"
+  ],
+  "countries": [
+   "EE. UU.",
+   "Colombia"
+  ],
+  "released": "2012-12-07 00:00:00",
+  "poster": "https://example.com/posters/11099.jpg",
+  "imdb": {
+   "rating": 5.5,
+   "votes": 286061,
+   "id": 168173
+  },
+  "tomatoes": {
+   "viewer": {
+    "rating": 2.0,
+    "numReviews": 72730
+   },
+   "lastUpdated": "2012-01-01 00:00:00"
+  },
+  "num_mflix_comments": 110,
+  "type": "movie"
+ }
+]
