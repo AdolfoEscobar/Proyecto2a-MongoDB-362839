@@ -47,7 +47,6 @@ COLL_WORK = os.environ.get("COLL_WORK", "movies_carga")
 
 # Concurrencia por defecto de la app asíncrona.
 DEFAULT_CONCURRENCY = int(os.environ.get("ASYNC_CONCURRENCY", "10"))
-DEFAULT_BATCH_SIZE = int(os.environ.get("BULK_BATCH_SIZE", "1000"))
 
 
 # ---------------------------------------------------------------------------
