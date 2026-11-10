@@ -36,7 +36,7 @@ Palabras clave que el profesor quiere oír: **AsyncMongoClient**,
 | `comparacion/demo_concurrencia.py` | Demo simulada SIN MongoDB | Prueba el concepto con `sleep` |
 | `scripts/verificar_conexion.py` | Diagnóstico | Prueba conexión y cuenta docs |
 | `scripts/cargar_sample_mflix.py` | Importador opcional | Carga un `movies.json` descargado |
-| `tests/test_sin_bd.py` | 14 pruebas sin servidor | Fakes en memoria, verifican todo |
+| `tests/test_sin_bd.py` | 15 pruebas sin servidor | Fakes en memoria, verifican todo |
 | `reporte/*.pdf` | Reporte del proyecto | Lo que se entrega + este código |
 
 Cómo se conectan:
@@ -131,7 +131,7 @@ Clase `AsyncMoviesDB` con la **misma API** (mismos métodos). Diferencias:
 - **Demo simulada:** cada "consulta" es un `sleep` de ~50 ms (simula la
   latencia de red). Mide sync vs gather vs TaskGroup. Resultado real
   medido: 1.66 s → 0.19 s (speedup x8.9 con concurrencia 10).
-- **Tests:** 14 pruebas con colecciones falsas en memoria que imitan a
+- **Tests:** 15 pruebas con colecciones falsas en memoria que imitan a
   PyMongo. Verifican CRUD, consultas, agregaciones, carga masiva,
   concurrencia (el Semaphore sí limita: máx ≤ 4 con tope 4) y que el
   benchmark usa la misma carga en ambas ramas.
@@ -215,7 +215,7 @@ python -m comparacion.benchmark --n 2000 --consultas 20 --rapido
 ```bash
 source .venv/bin/activate
 
-# 14 pruebas, ~0.2 s
+# 15 pruebas, ~0.2 s
 python -m unittest discover -s tests -v
 
 # Demo simulada de concurrencia (speedup ~ igual a la concurrencia)
@@ -253,7 +253,7 @@ python reporte/generar_reporte_pdf.py
 5. **(2 min) Comparación:** muestra la tabla del benchmark
    (experimentos A, B, C + speedups) y concluye: *"gana async porque el
    trabajo es I/O-bound; el speedup crece con la latencia"*.
-6. **Cierre:** tests 14/14 + demo simulada como evidencia extra.
+6. **Cierre:** tests 15/15 + demo simulada como evidencia extra.
 
 Si algo falla en vivo (sin red, Mongo apagado): corre los comandos de
 la sección 5.4 — funcionan siempre y demuestran el concepto.

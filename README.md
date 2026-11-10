@@ -29,7 +29,7 @@ Proyecto2a_MongoDB_362839/
 ├── comparacion/demo_concurrencia.py  # Demo simulada SIN BD
 ├── scripts/verificar_conexion.py     # Prueba la conexión
 ├── scripts/cargar_sample_mflix.py    # Importa un movies.json descargado
-├── tests/test_sin_bd.py       # 14 pruebas sin servidor (fakes en memoria)
+├── tests/test_sin_bd.py       # 15 pruebas sin servidor (fakes en memoria)
 ├── reporte/                   # Reporte del proyecto (.md y .pdf)
 ├── requirements.txt  .env.example  LEEME.txt  README.md
 ```
@@ -75,7 +75,7 @@ python -m async_app.app_async --demo --n 2000 --concurrencia 10
 # Benchmark comparativo (guarda comparacion/resultados_benchmark.json)
 python -m comparacion.benchmark --n 5000 --lote 1000 --consultas 50
 
-# Pruebas sin BD (14 tests, ~0.2 s)
+# Pruebas sin BD (15 tests, ~0.2 s)
 python -m unittest discover -s tests -v
 
 # Demo simulada sin BD (concepto de concurrencia I/O-bound)

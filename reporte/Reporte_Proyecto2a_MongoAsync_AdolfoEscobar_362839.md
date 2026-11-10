@@ -87,7 +87,7 @@ comparacion/benchmark.py         Misma carga en ambas apps, mide tiempos
 comparacion/demo_concurrencia.py Simulación de latencia I/O sin BD
 scripts/verificar_conexion.py    Diagnóstico de conexión
 scripts/cargar_sample_mflix.py   Importa un movies.json descargado
-tests/test_sin_bd.py             14 pruebas con colecciones en memoria
+tests/test_sin_bd.py             15 pruebas con colecciones en memoria
 ```
 
 Ambas clases exponen la **misma API** (mismos métodos y consultas) para
@@ -153,7 +153,7 @@ o Atlas (clúster gratuito; opcionalmente con *Load Sample Dataset*).
 
 ## 5. Resultados
 
-### 5.1 Pruebas de lógica sin BD: 14/14 correctas
+### 5.1 Pruebas de lógica sin BD: 15/15 correctas
 
 `tests/test_sin_bd.py` verifica con colecciones simuladas en memoria:
 esquema y determinismo del generador, partición en lotes, CRUD completo,
@@ -162,7 +162,9 @@ agregaciones, paginación, carga masiva con `TaskGroup` y con `gather`,
 consultas concurrentes, y que el `Semaphore` limita la concurrencia real
 (máximo observado ≤ 4 con tope 4, y > 1, es decir, sí hubo paralelismo).
 Además se verificó que el benchmark aplica **la misma carga de trabajo**
-en ambas ramas (10 consultas → 90 docs en ambas; 100 updates en ambas).
+en ambas ramas (10 consultas → 90 docs en ambas; 100 updates en ambas),
+y un test de paridad garantiza que los fakes replican la API real
+(`aggregate()` es corutina, `find()` no), para no enmascarar bugs.
 
 ### 5.2 Demo simulada de concurrencia (medida, sin BD)
 
@@ -178,24 +180,26 @@ concurrencia 10 (corre con `python -m comparacion.demo_concurrencia`):
 Con trabajo I/O-bound, traslapar esperas reduce el tiempo total en
 proporción cercana a la concurrencia configurada.
 
-### 5.3 Benchmark real contra MongoDB
+### 5.3 Benchmark real contra MongoDB Atlas (medido)
 
-Se corre con `python -m comparacion.benchmark --n 5000 --consultas 50`.
-Experimentos: (A) carga masiva de N docs en lotes, (B) Q consultas
-mezcladas, (C) actualización masiva de ratings. Se reporta el mejor
-tiempo de 3 repeticiones por experimento.
+Comando: `python -m comparacion.benchmark --n 5000 --consultas 50`
+(MongoDB Atlas 8.0, concurrencia 10, lotes de 1000, mejor de 3
+repeticiones por experimento; evidencia completa en
+`comparacion/resultados_benchmark.json`).
 
 | Experimento | Síncrono (s) | Asíncrono (s) | Speedup | Ganador |
 |---|---|---|---|---|
-| A. Carga masiva (N=5000) | _(medir)_ | _(medir)_ | _(medir)_ | _(medir)_ |
-| B. Consultas mezcladas (Q=50) | _(medir)_ | _(medir)_ | _(medir)_ | _(medir)_ |
-| C. Update masivo (2000) | _(medir)_ | _(medir)_ | _(medir)_ | _(medir)_ |
+| A. Carga masiva (N=5000) | 13.45 | 6.47 | x2.08 | ASYNC |
+| B. Consultas mezcladas (Q=50) | 9.83 | 1.14 | x8.65 | ASYNC |
+| C. Update masivo (2000) | 5.55 | 1.13 | x4.90 | ASYNC |
 
-Resultado esperado: la app asíncrona gana con claridad en B y C (muchas
-operaciones independientes donde domina la latencia) y también en A
-cuando la latencia permite traslapar lotes. El speedup crece con la
-latencia de red: contra Atlas (decenas de ms) es mayor que contra un
-MongoDB local (~1 ms), donde el límite pasa a ser el servidor.
+Lectura: la app asíncrona gana en los tres experimentos. El speedup es
+máximo en B (x8.65, cercano a la concurrencia 10: 50 consultas
+independientes donde domina la latencia de red) y notable en C (x4.90).
+En A (x2.08) el traslape de lotes también ayuda, aunque cada `bulk_write`
+ya es eficiente por sí mismo. Contra Atlas (decenas de ms de latencia)
+el beneficio es mayor que contra un MongoDB local (~1 ms), donde el
+límite pasa a ser el servidor.
 
 ## 6. Comparación síncrona vs asíncrona
 
