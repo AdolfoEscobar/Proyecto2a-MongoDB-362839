@@ -199,13 +199,15 @@ def main():
         print(f"\n[C] Actualización masiva de {n_upd} ratings (bulk_write)...")
         t_sync, t_async = [], []
         for r in range(args.repetir):
-            # Alternar el valor para que cada repetición modifique de verdad
-            # (si todos ya valen 7.5, modified_count saldría 0).
-            rating = 7.5 if r % 2 == 0 else 8.5
-            s = experimento_update_sync(sync_db, n_upd, rating)
+            # Valores opuestos por rama y repetición: así TODAS las
+            # llamadas modifican de verdad (si async repitiera el valor
+            # que sync acaba de poner, modified_count saldría 0).
+            s = experimento_update_sync(
+                sync_db, n_upd, 7.5 if r % 2 == 0 else 8.5)
             t_sync.append(s["segundos"])
             print(f"    sync  rep{r + 1}: {s['segundos']:.2f}s ({s['modificados']} mods)")
-            s = await experimento_update_async(async_db, n_upd, rating)
+            s = await experimento_update_async(
+                async_db, n_upd, 8.5 if r % 2 == 0 else 7.5)
             t_async.append(s["segundos"])
             print(f"    async rep{r + 1}: {s['segundos']:.2f}s ({s['modificados']} mods)")
         resultados["experimentos"]["update_masivo"] = {
